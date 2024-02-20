@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>pt.segsocial.iies.fraw</groupId>
-            <artifactId>dummy-contract</artifactId>
+            <artifactId>dummy-service-api</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -25,6 +25,14 @@
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.jboss.spec.javax.ejb</groupId>
+            <artifactId>jboss-ejb-api_3.1_spec</artifactId>
+            <version>1.0.2.Final</version>
+            <scope>provided</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>junit</groupId>

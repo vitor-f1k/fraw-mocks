@@ -1,6 +1,6 @@
 package pt.segsocial.iies.fraw.mock.mapper;
 
-import pt.segsocial.iies.fraw.annotations.Mocking;
+import pt.segsocial.iies.fraw.annotations.mock.Mocking;
 
 import java.lang.reflect.Method;
 

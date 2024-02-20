@@ -10,9 +10,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>fraw-annotations</module>
+        <module>fraw-mock-annotations</module>
         <module>mock-generator-plugin</module>
-        <module>dummy-contract</module>
+        <module>dummy-service-api</module>
         <module>fraw-test-mocks</module>
         <module>fraw-mock-mapper</module>
     </modules>

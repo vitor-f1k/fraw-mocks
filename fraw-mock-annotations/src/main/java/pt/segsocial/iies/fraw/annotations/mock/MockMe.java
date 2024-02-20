@@ -1,4 +1,4 @@
-package pt.segsocial.iies.fraw.annotations;
+package pt.segsocial.iies.fraw.annotations.mock;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

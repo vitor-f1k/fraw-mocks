@@ -110,9 +110,11 @@ class MockGeneratorMojo extends AbstractMojo {
         ps.println()
         ps.println("package " + classPackage.getName() + ";")
         ps.println()
+        ps.println("import javax.ejb.LocalBean;")
         ps.println("import " + clazz.getName() + ";")
         ps.println("import static pt.segsocial.iies.fraw.mock.mapper.MockRegistry.*;")
         ps.println()
+        ps.println("@LocalBean")
         ps.println("public class " + mockClassName )
         ps.println("\t implements " + clazz.getName())
         ps.println("{")
@@ -162,7 +164,7 @@ class MockGeneratorMojo extends AbstractMojo {
             }
             methodPrintStream.println(");")
             methodPrintStream.println("\t\t}")
-            generateMethodReturn(methodPrintStream, m)
+            generateMethodReturn(methodPrintStream, clazz, methodSig)
             methodPrintStream.println("\t}")
         }
         mainPrintStream.print(outMethod.toString())
@@ -191,14 +193,17 @@ class MockGeneratorMojo extends AbstractMojo {
             else if(count == 0)
                 ps.print(" throws ")
             ps.print(exceptionType.getName())
-            count += 1;
+            count += 1
         }
     }
 
-    private void generateMethodReturn(PrintStream ps, Method method) {
+    private void generateMethodReturn(PrintStream ps, Class clazz, String methodSig) {
+        ps.println("\t\tthrow new java.lang.RuntimeException(\"II_MOCK default implementation for: " + clazz.getSimpleName() + " -> " + methodSig + "\");")
+/*
         Class returnMethodType = method.getReturnType()
         TypeDecorator decorator = TypeDecorator.getDecorator(returnMethodType)
         decorator.decorate(ps, returnMethodType)
+*/
     }
 
     private void generateMethodParameters(PrintStream ps, Method method) {

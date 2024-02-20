@@ -1,7 +1,7 @@
 package pt.segsocial.iies.fraw.api;
 
 
-import pt.segsocial.iies.fraw.annotations.MockMe;
+import pt.segsocial.iies.fraw.annotations.mock.MockMe;
 
 import java.util.List;
 

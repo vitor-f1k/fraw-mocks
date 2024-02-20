@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>pt.segsocial.iies.fraw</groupId>
-            <artifactId>fraw-annotations</artifactId>
+            <artifactId>fraw-mock-annotations</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

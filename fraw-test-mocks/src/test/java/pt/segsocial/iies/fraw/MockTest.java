@@ -2,7 +2,7 @@ package pt.segsocial.iies.fraw;
 
 import org.junit.Before;
 import org.junit.Test;
-import pt.segsocial.iies.fraw.annotations.Mocking;
+import pt.segsocial.iies.fraw.annotations.mock.Mocking;
 import pt.segsocial.iies.fraw.api.DummyService;
 import pt.segsocial.iies.fraw.api.IIMock_DummyService;
 import pt.segsocial.iies.fraw.mock.mapper.AbstractCustomMock;
